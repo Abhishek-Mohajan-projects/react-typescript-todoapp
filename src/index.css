@@ -1,0 +1,78 @@
+body {
+  background-color: black;
+  font-family: consolas;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+.todo {
+  background-color: brown;
+  padding: 1em;
+  color: white;
+  border-radius: 0.6em;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em white;
+}
+
+.todos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.button {
+  display: inline;
+  border: none;
+  outline: none;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.button:hover {
+  color: white;
+  background-color: black;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input {
+  width: 20em;
+  padding: 1em;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+  background-color: white;
+  box-shadow: 0.1em 0.1em 0.1em 0.1em brown;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline;
+  border: none;
+  outline: none;
+  padding: 0.7em;
+  border-radius: 0.5em;
+  background-color: orange;
+}
+
+@media screen and (max-width: 600px) {
+  .todos {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
